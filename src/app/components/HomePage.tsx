@@ -13,7 +13,7 @@ export function HomePage({ onStartGame }: HomePageProps) {
       <section className="text-center py-16">
         <div className="mb-12 items-center justify-center flex">
           {/* <HeroIllustration /> */}
-          <img src={logoWText} width={256} height={256} alt="" />
+          <img src={logoWText} width={300} height={200} alt="" />
         </div>
         <h1 className="text-5xl md:text-7xl font-bold text-gray-900 mb-4">
           NaukOWIEC

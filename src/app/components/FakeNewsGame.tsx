@@ -4,31 +4,143 @@ import { CheckCircle2, XCircle, AlertTriangle } from "lucide-react";
 const newsItems = [
   {
     id: 1,
-    title: "Naukowa sensacja: owieczki potrafią latać!",
-    content: "Według badań przeprowadzonych przez nieznany uniwersytet, owieczki rozwinęły umiejętność latania.",
+    title: "Czy kameleony zmieniają kolor tylko po to, by się maskować?",
+    content: "Sprawdź, czy zmiana koloru u kameleonów służy wyłącznie kamuflażowi.",
     isFake: true,
-    explanation: "To fake news! Brak wiarygodnego źródła i naukowych dowodów. Zawsze sprawdzaj źródło informacji!"
+    explanation: "Fałsz: Kameleony zmieniają kolor także w celu komunikacji i regulacji temperatury."
   },
   {
     id: 2,
-    title: "Ministerstwo Edukacji: Nowy program nauki cyfrowej w szkołach",
-    content: "Ministerstwo Edukacji ogłosiło oficjalnie wprowadzenie zajęć z bezpieczeństwa w internecie do programu nauczania.",
-    isFake: false,
-    explanation: "Prawdziwa wiadomość! Pochodzi z oficjalnego źródła rządowego i jest potwierdzona."
+    title: "Czy wilki wyją do księżyca?",
+    content: "Czy wilki wyją, ponieważ reagują na księżyc?",
+    isFake: true,
+    explanation: "Fałsz: Wycie wilków służy komunikacji w stadzie."
   },
   {
     id: 3,
-    title: "PILNE: Czekolada teraz zakazana dla dzieci!",
-    content: "Anonimowe źródło twierdzi, że rząd planuje zakaz spożywania czekolady przez osoby poniżej 18 roku życia.",
+    title: "Czy jeże noszą jabłka na plecach?",
+    content: "Popularny obrazek z bajek – czy to prawda?",
     isFake: true,
-    explanation: "To fake news! Anonimowe źródło, brak oficjalnych dokumentów, sensacyjny tytuł - klasyczne oznaki dezinformacji."
+    explanation: "Fałsz: To mit, jeże nie noszą jabłek i jedzą głównie pokarm zwierzęcy."
   },
   {
     id: 4,
-    title: "Ostrzeżenie policji: Nowa metoda oszustw internetowych",
-    content: "Policja ostrzega przed nową metodą phishingu, w której oszuści podszywają się pod banki w wiadomościach SMS.",
+    title: "Czy byki reagują na kolor czerwony?",
+    content: "Czy czerwona płachta denerwuje byka?",
+    isFake: true,
+    explanation: "Fałsz: Byki reagują na ruch, a nie kolor."
+  },
+  {
+    id: 5,
+    title: "Czy złote rybki mają pamięć 3 sekundy?",
+    content: "Sprawdź, jak naprawdę działa pamięć rybek.",
+    isFake: true,
+    explanation: "Fałsz: Potrafią pamiętać nawet przez kilka miesięcy."
+  },
+  {
+    id: 6,
+    title: "Czy Wielki Mur Chiński widać z kosmosu?",
+    content: "Czy można go zobaczyć gołym okiem z orbity?",
+    isFake: true,
+    explanation: "Fałsz: Jest zbyt wąski i zlewa się z otoczeniem."
+  },
+  {
+    id: 7,
+    title: "Czy człowiek używa tylko 10% mózgu?",
+    content: "Popularny mit o możliwościach mózgu.",
+    isFake: true,
+    explanation: "Fałsz: Używamy całego mózgu."
+  },
+  {
+    id: 8,
+    title: "Czy czysta woda dobrze przewodzi prąd?",
+    content: "Jak zachowuje się destylowana woda?",
+    isFake: true,
+    explanation: "Fałsz: Czysta woda jest izolatorem."
+  },
+  {
+    id: 9,
+    title: "Czy guma do żucia zostaje w żołądku 7 lat?",
+    content: "Mit o trawieniu gumy.",
+    isFake: true,
+    explanation: "Fałsz: Jest wydalana w ciągu kilku dni."
+  },
+  {
+    id: 10,
+    title: "Czy piorun nie uderza dwa razy w to samo miejsce?",
+    content: "Sprawdź, czy to bezpieczne założenie.",
+    isFake: true,
+    explanation: "Fałsz: Może uderzyć wielokrotnie."
+  },
+  {
+    id: 11,
+    title: "Czy psy widzą tylko w czerni i bieli?",
+    content: "Jak wygląda świat oczami psa?",
+    isFake: true,
+    explanation: "Fałsz: Widzą kolory, głównie niebieski i żółty."
+  },
+  {
+    id: 12,
+    title: "Czy pomidor to owoc?",
+    content: "Jak klasyfikuje go nauka?",
     isFake: false,
-    explanation: "Prawdziwa informacja! Pochodzi z oficjalnego komunikatu policji i ostrzega przed realnym zagrożeniem."
+    explanation: "Prawda: Pomidor to owoc (jagoda)."
+  },
+  {
+    id: 13,
+    title: "Czy truskawka to jagoda?",
+    content: "Czy należy do jagód?",
+    isFake: true,
+    explanation: "Fałsz: To owoc rzekomy."
+  },
+  {
+    id: 14,
+    title: "Czy zasada 5 sekund działa?",
+    content: "Czy można bezpiecznie podnieść jedzenie?",
+    isFake: true,
+    explanation: "Fałsz: Bakterie przenoszą się natychmiast."
+  },
+  {
+    id: 15,
+    title: "Czy Frankenstein to imię potwora?",
+    content: "Czy tak naprawdę nazywa się potwór?",
+    isFake: true,
+    explanation: "Fałsz: To nazwisko naukowca."
+  },
+  {
+    id: 16,
+    title: "Czy Ziemia jest idealną kulą?",
+    content: "Jaki naprawdę ma kształt?",
+    isFake: true,
+    explanation: "Fałsz: Jest spłaszczona na biegunach."
+  },
+  {
+    id: 17,
+    title: "Czy możesz pić wodę, którą pił dinozaur?",
+    content: "Czy woda krąży w obiegu?",
+    isFake: false,
+    explanation: "Prawda: Woda krąży w obiegu zamkniętym."
+  },
+  {
+    id: 18,
+    title: "Czy wszystko w internecie jest prawdziwe?",
+    content: "Czy można ufać każdej informacji online?",
+    isFake: true,
+    explanation: "Fałsz: W internecie jest wiele fałszywych informacji."
+  },
+  {
+    id: 19,
+    title: "Czy fake news to celowo zmyślona informacja?",
+    content: "Definicja fake newsa.",
+    isFake: false,
+    explanation: "Prawda: Fake news to celowa dezinformacja."
+  },
+  {
+    id: 20,
+    title: "Czy zdjęcie zawsze jest dowodem prawdy?",
+    content: "Czy zdjęcia mogą wprowadzać w błąd?",
+    isFake: true,
+    explanation: "Fałsz: Zdjęcia mogą być zmanipulowane."
   }
 ];
 

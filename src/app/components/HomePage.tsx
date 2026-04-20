@@ -1,5 +1,6 @@
 import { HeroIllustration } from "./HeroIllustration";
 import { BookOpen, Search, Sparkles, Target, Users, Lightbulb, Shield, Globe, GraduationCap, Gamepad2, TrendingUp, CheckCircle } from "lucide-react";
+import logoWText from '../assets/logo/logo_wText.png';
 
 interface HomePageProps {
   onStartGame: (mode: "fakenews" | "search" | "ai") => void;
@@ -10,8 +11,9 @@ export function HomePage({ onStartGame }: HomePageProps) {
     <div className="space-y-20">
       {/* Hero Section */}
       <section className="text-center py-16">
-        <div className="mb-12">
-          <HeroIllustration />
+        <div className="mb-12 items-center justify-center flex">
+          {/* <HeroIllustration /> */}
+          <img src={logoWText} width={256} height={256} alt="" />
         </div>
         <h1 className="text-5xl md:text-7xl font-bold text-gray-900 mb-4">
           NaukOWIEC

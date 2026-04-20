@@ -1,3 +1,4 @@
+import logo from "../assets/logo/logo.png";
 export function Logo({ size = "medium" }: { size?: "small" | "medium" | "large" }) {
   const sizes = {
     small: { container: 40, text: "text-lg" },
@@ -10,14 +11,8 @@ export function Logo({ size = "medium" }: { size?: "small" | "medium" | "large" 
   return (
     <div className="flex items-center gap-3">
       {/* Modern N icon */}
-      <div
-        className="bg-gradient-to-br from-purple-600 to-purple-500 rounded-xl flex items-center justify-center"
-        style={{ width: container, height: container }}
-      >
-        <span className="text-white font-bold" style={{ fontSize: container * 0.5 }}>
-          N
-        </span>
-      </div>
+      
+        <img src={logo} alt="" height={100} width={100}/>
 
       <div>
         <h1 className={`${text} font-bold text-gray-900 leading-tight`}>

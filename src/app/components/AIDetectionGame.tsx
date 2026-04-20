@@ -1,68 +1,7 @@
 import { useState } from "react";
 import { Sparkles, CheckCircle2, XCircle, Info } from "lucide-react";
-
-const examples = [
-  {
-    id: 1,
-    type: "image",
-    description: "Zdjęcie krajobrazowe",
-    isAI: true,
-    clues: [
-      "Dziwne zniekształcenia w tle",
-      "Nienaturalne oświetlenie",
-      "Powtarzające się wzory"
-    ],
-    explanation: "To obraz stworzony przez AI! Zwróć uwagę na nienaturalne detale i powtarzające się wzory, które często występują w obrazach generowanych przez sztuczną inteligencję."
-  },
-  {
-    id: 2,
-    type: "text",
-    content: "Witam! Dziś pokażę Wam, jak zrobić pyszne ciasteczka. Najpierw potrzebujemy mąki, cukru i masła...",
-    isAI: false,
-    clues: [
-      "Naturalny styl pisania",
-      "Osobiste zwroty",
-      "Brak nadmiernej perfekcji"
-    ],
-    explanation: "To prawdziwy tekst napisany przez człowieka! Ma naturalny, osobisty ton i nie jest zbyt doskonały."
-  },
-  {
-    id: 3,
-    type: "video",
-    description: "Nagranie wypowiedzi polityka",
-    isAI: true,
-    clues: [
-      "Nienaturalne ruchy ust",
-      "Dziwne migotanie wokół twarzy",
-      "Robotyczne gesty"
-    ],
-    explanation: "To deepfake! Zwróć uwagę na nienaturalne ruchy ust, które nie zawsze pasują do dźwięku, oraz dziwne artefakty wokół twarzy."
-  },
-  {
-    id: 4,
-    type: "text",
-    content: "W kontekście zaawansowanych technologii informacyjnych, należy rozważyć wieloaspektowe implikacje cyfrowej transformacji w obszarze edukacyjnym, uwzględniając paradygmaty innowacyjności...",
-    isAI: true,
-    clues: [
-      "Bardzo formalne słownictwo",
-      "Długie, skomplikowane zdania",
-      "Brak konkretów, ogólniki"
-    ],
-    explanation: "To tekst wygenerowany przez AI! Typowe cechy: nadmiernie formalne słownictwo, długie zdania pełne ogólników bez konkretnych przykładów."
-  },
-  {
-    id: 5,
-    type: "image",
-    description: "Fotografia rodzinna z wakacji",
-    isAI: false,
-    clues: [
-      "Naturalne proporcje ciała",
-      "Realistyczne światło i cienie",
-      "Spójne tło"
-    ],
-    explanation: "To prawdziwe zdjęcie! Wszystkie elementy są naturalne i spójne, proporcje ciała są prawidłowe, a światło i cienie wyglądają realistycznie."
-  }
-];
+import data from '../assets/data/data.json';
+const examples = data.aiFiles;
 
 export function AIDetectionGame() {
   const [currentIndex, setCurrentIndex] = useState(0);

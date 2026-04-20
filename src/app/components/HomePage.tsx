@@ -1,4 +1,3 @@
-import { HeroIllustration } from "./HeroIllustration";
 import { BookOpen, Search, Sparkles, Target, Users, Lightbulb, Shield, Globe, GraduationCap, Gamepad2, TrendingUp, CheckCircle } from "lucide-react";
 import logoWText from '../assets/logo/logo_wText.png';
 
@@ -12,7 +11,6 @@ export function HomePage({ onStartGame }: HomePageProps) {
       {/* Hero Section */}
       <section className="text-center py-16">
         <div className="mb-12 items-center justify-center flex">
-          {/* <HeroIllustration /> */}
           <img src={logoWText} width={300} height={200} alt="" />
         </div>
         <h1 className="text-5xl md:text-7xl font-bold text-gray-900 mb-4">

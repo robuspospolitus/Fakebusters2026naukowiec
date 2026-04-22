@@ -48,3 +48,7 @@ Design: Figma
 `npm run dev`
 
 The app will be available at: [localhost](http://localhost:5173)
+
+## Author
+
+Developed as part of the NaukOWIEC educational initiative.

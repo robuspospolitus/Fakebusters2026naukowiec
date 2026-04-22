@@ -1,37 +1,50 @@
 
- # NaukOWIEC - edukacyjna aplikacja rządowa
+ # NaukOWIEC – Web Application
 
- Aplikacja jest dostępna [TUTAJ](https://fakebusters2026naukowiec.vercel.app/)
+ Application is also available [HERE](https://fakebusters2026naukowiec.vercel.app/)
 
-## Opis projektu
-Ten problem trudno już ignorować. Narasta on z każdym dniem i jest globalnym wyzwaniem, które stale ewoluuje. Aby ograniczyć jego konsekwencje należy zacząć od skutecznej edukacji, bo to właśnie najmłodsi będą kołem napędowym wzrostu odporności społeczeństwa na dezinformację.
+## Overview
 
-Program NaukOWIEC proponuje oddolne podejście do globalnego problemu - oparte o zmiany w systemie edukacji. Zarówno w szkole, jak i w domu wdrożymy naukę opartą na zabawie, storytellingu i doświadczeniu. 
+NaukOWIEC is an interactive web application designed to support education in identifying misinformation. It leverages game-like mechanics and storytelling to engage users in learning through problem-solving, information analysis, and decision-making.
 
-Nauka rozpoznawania fałszu nie wymaga wprowadzania nowego przedmiotu, za to świetnie sprawdzi się jako nowy element już istniejącego programu. Na lekcjach matematyki, geografii czy biologii pojawią się wyzwania w formie zagadek detektywistycznych, interaktywnych przygód i łamigłówek do rozwiązania w domu z rodzicami. Na przykład na lekcji chemii uczniowie sprawdzą czy witamina C lewoskrętna faktycznie istnieje. Dodatkowo oddział ekspertów NaukOWIEC przeprowadzi w każdej szkole Dzień Szpiega czyli grę terenową z elementami LARP i Escape Room. Młodzi odkrywcy fejków będą też mogli spróbować swoich sił w drużynowej olimpiadzie dezinformacyjnej.
+The application serves as a digital extension of an educational program and can be used both in classrooms and at home.
 
-Formą nauki przez zabawę w czasie wolnym są dziś bez wątpienia gry komputerowe. Wykorzystamy to medium tworząc dostępne za darmo wysokiej jakości produkcje, w których pojawią się mechaniki wykrywania fałszywych informacji wplecione w rozgrywkę. Powstaną też immersyjne doświadczenia na trójwymiarowej platformie Roblox, popularnej wśród młodszych dzieci.
+## Project Goals
 
-Aby zwiększyć zasięg projektu, przeprowadzimy szeroką kampanię marketingową, obejmującą współpracę z popularnymi wśród młodszych odbiorców influencerami. Promocja obejmuje również ogłoszenia na grupach rodzicielskich, kampanię reklamową w telewizji i mediach społecznościowych. 
+The application aims to:
 
-Potencjalnym ograniczeniem tego planu może być strach przed zmianami. Ludzie boją się zmian, dlatego kluczem jest stopniowe wprowadzanie programu.
+- develop critical thinking skills,
+- teach users how to recognize false information,
+- support education through interactive experiences,
+- increase resistance to misinformation among younger audiences.
 
-Zwróć uwagę na zalety tego rozwiązania:
-- duża świadomość społeczna ogranicza siłę dezinformacji
-- międzypokoleniowy transfer wiedzy - w edukację najmłodszych włączamy nauczycieli i rodziców 
-- treści zostaną przygotowane przy współpracy ze środowiskiem naukowym i ekspertami branży kreatywnej
-- konspekty zajęć, materiały i pomysły będą dostępne za darmo dla nauczycieli i edukatorów co pozwoli na współtworzenie projektu na poziomie lokalnym.
+## Features
 
-Łatwość do wdrożenia i przystępność projektu daje możliwość na przyszłą integrację z innymi krajami Unii Europejskiej.
+- Interactive puzzles and educational scenarios
+- Detective-style mechanics (information analysis, fact-checking)
+- Story-driven user experience
+- Gamification elements to boost engagement
+- Fully responsive interface
+- Modern UI based on reusable components
 
-Podsumowanie:
-NaukOWIEC – recepta na owczy pęd!
+## Tech Stack
 
-## Stack
+Frontend: React + TypeScript
+Build Tool: Vite
+Styling: Tailwind CSS
+UI Components: Radix UI
+Design: Figma
 
-Zrobione przy użyciu Vite, Figma
+## Getting Started
 
-## Instalacja lokalnie
+### Prerequisites
 
-`npm i`
+- Node.js (LTS recommended)
+- npm or yarn
+
+### Installation & Run
+
+`npm install`
 `npm run dev`
+
+The app will be available at: [localhost](http://localhost:5173)
